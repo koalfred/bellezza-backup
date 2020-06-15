@@ -1,0 +1,66 @@
+.navi-box {
+
+    .desc-wrapper {
+        margin-bottom: 20%;
+
+        h2 {
+            text-transform: capitalize;
+        }
+
+        .faq-title {
+            text-transform: uppercase;
+        }
+
+        text-align: center;
+
+        .main-button {
+            background-color: #806854;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    @media (min-width: 799px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 0px;
+        grid-template-areas: 
+        "desc-1 img-1"
+        "img-2 desc-2"
+        "desc-3 img-3"
+        ;
+
+        .about-desc {
+            grid-area: desc-1;
+        }
+
+        .about-img {
+            grid-area: img-1;
+        }
+
+        .contact-desc {
+            grid-area: desc-2;
+        }
+
+        .contact-img {
+            grid-area: img-2;
+        }
+
+        .faq-desc {
+            grid-area: desc-3;
+        }
+
+        .faq-img {
+            grid-area: img-3;
+        }        
+    }
+}
+
+.acf-map {
+    width: 100%;
+    height: 400px;
+    border: #ccc solid 1px;
+    margin: 20px 0;
+    display: block;
+}

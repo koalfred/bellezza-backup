@@ -1,0 +1,19 @@
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+	text-align: center;
+}
+
+.desktop-table {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.mobile-table-1, .mobile-table-2, .mobile-table-3 {
+		display: none;
+	}
+
+	.desktop-table {
+		display: table;
+	}
+}
